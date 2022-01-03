@@ -1,0 +1,85 @@
+//about
+///////
+.about {
+	background-image: url(../img/about-bg.jpg);
+	@include hero-bg-property;
+	@include respond(phone) {
+		padding: 2.0rem 0;
+	}
+	@include respond(tab-port) {
+		padding: 2.0rem 0;
+	}
+	@include respond(tab-land) {
+		padding: 3.0rem 0;
+	}
+	&__h1 {
+		@include h1-property;
+		@include respond(phone) {
+			font-size: 5rem;
+		}
+	}
+	&__p {
+		margin-top: 1rem;
+		text-align: center;
+		padding: 0 15.5rem;
+		-webkit-background-clip: text;
+		color: transparent;
+		background-image: $linear-gradient;
+		box-shadow: $hover-box-shadow;
+		font-size: $default-font-size;
+		font-weight: $default-font-weight;
+		font-family: Montserrat;
+		letter-spacing: 1px;
+		line-height: 2.2rem;
+		@include respond(phone) {
+			padding: 0 0;
+		}
+		@include respond(tab-port) {
+			padding: 0 0;
+			line-height: 1.6rem;
+		} 
+		@include respond(tab-land) {
+			padding: 0 1rem;
+		}
+	}
+	&__skills {
+			text-align: center;
+		&-ul {
+			margin-top: 3rem;
+			cursor: pointer;
+			word-spacing: 20px;
+		}
+		&-li {
+			display: inline-block;
+			color: $color-white;
+			background: $linear-gradient;
+			padding: $btn-padding;
+			border-radius: 100px;
+			list-style: none;
+			font-family: Montserrat;
+			font-weight: 400;
+			letter-spacing: 2.5px;
+			font-weight: $default-font-weight;
+			font-size: $default-font-size;
+			transition: $default-transition;
+			@include respond(phone) {
+				margin-top: .8rem;
+			}
+			@include respond(tab-port) {
+				margin-top: .8rem;	
+			}
+			@include respond(tab-land) {
+				margin-bottom: 1.0rem;
+			}
+			&:hover {
+				transform: translateY(-3px);
+				box-shadow: $hover-box-shadow;
+			}
+			&:active,
+			&:focus {
+			transform: translateY(-1px);
+			box-shadow: $focus-box-shadow; 
+			}
+		}
+	}
+}

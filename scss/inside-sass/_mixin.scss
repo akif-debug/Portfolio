@@ -1,0 +1,36 @@
+@mixin h1-property() {
+	text-align: center;
+	font-size: $heading-font-size;
+	font-family: playball;
+	font-weight: $default-font-weight;
+	text-shadow: $hover-box-shadow;
+	-webkit-background-clip: text;
+	color: transparent;
+	transition: $default-transition;
+	background-image: $linear-gradient;
+}
+@mixin hero-bg-property() {
+	height: 100%;
+	padding: 8.0rem 0;
+}
+/////media////////////
+/////media////////////
+/////media////////////
+/////media////////////
+/////media////////////
+@mixin respond($breakpoint) {
+	@if $breakpoint == phone {
+		@media (min-width: 250px) and (max-width: 600px) { @content };
+	}
+	@if $breakpoint == tab-port {
+		@media(min-width: 600px) and (max-width: 900px) { @content };
+	}
+	@if $breakpoint == tab-land {
+		@media (min-width: 900px) and (max-width: 1200px) { @content };
+	}
+	@if $breakpoint == big-desktop {
+		@media (min-width: 1800px) { @content }; 
+	}
+} 
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/main.css -w"
+  },
+  "author": "13.5coder",
+  "license": "ISC",
+  "dependencies": {
+    "g": "^2.0.1",
+    "live-server": "^1.2.1",
+    "npm": "^8.3.0"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

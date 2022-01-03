@@ -1,0 +1,30 @@
+.image-gallery {
+	background: linear-gradient(to right bottom, $color-purple, $color-black);
+	padding: 5.0rem 0;
+	.image-gallery__h1 {
+		@include h1-property;
+		padding-bottom: 2rem;
+		@include respond(phone) {
+			font-size: 5rem;
+		}
+	}
+.image-gallery__wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 15px;
+	&-box {
+		padding: 10px;
+		transition: .3s ease-in-out;
+		filter: grayscale(100%) !important;
+		&:hover {
+		filter: grayscale(0%) !important;
+	}	
+	& img {
+		width: 100%;
+		@include respond(phone) {
+			width: 80%;
+ 				}
+			}
+		}
+	}
+}

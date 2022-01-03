@@ -1,0 +1,31 @@
+/////////////footer
+.footer {
+	margin-top: 2rem;
+	text-align: center;
+	&__p {
+		&-span {
+			font-size: 1.8rem;
+			font-weight: $default-font-weight;
+			font-family: montserrat;
+			color: transparent;
+			background-image: $linear-gradient;
+			-webkit-background-clip: text;
+			padding: 20px;
+			a {
+				text-decoration: none;
+				color: transparent;
+				background-image: $linear-gradient;
+				-webkit-background-clip: text;
+			}
+		}
+	}
+	h1 {
+		font-size: 1.8rem;
+		font-family: pacifico;
+		padding-top: 1rem;
+		padding-bottom: 0.5rem;
+		color: transparent;
+		background-image: $linear-gradient;
+		-webkit-background-clip: text;
+	}
+}
