@@ -12,8 +12,8 @@ $default-font-size : 18px;
 //font-weight 
 $default-font-weight : 600;
 //box-shadow
-$hover-box-shadow : 0 1rem 2rem rgba($color-black, .3);
-$focus-box-shadow : 0 .5rem 1rem rgba($color-black, .2);
+$hover-box-shadow : 0 5px 10px rgba($color-black, .1);
+$focus-box-shadow : 0 3px 5px rgba($color-black, .1);
 //transition
 $default-transition : all .2s ease-in;
 //heading
@@ -54,12 +54,12 @@ $heading-font-size : 8rem;
 		margin: 1.5rem 1rem;
 		transition: $default-transition;
 		&:hover {
-			transform: translateY(-3px);
-			box-shadow: $hover-box-shadow;
+			transform: translateY(-2px);
+			// box-shadow: $hover-box-shadow;
 		}
 		&:active,
 		&:focus {
-			transform: translateY(-1px);
+			transform: translateY(0px);
 			box-shadow: $focus-box-shadow; 
 		}
 	}
@@ -77,6 +77,10 @@ $heading-font-size : 8rem;
 		font-weight: $default-font-weight;
 		text-transform: uppercase;
 		font-family: Montserrat;
+		transition: $default-transition;
+		}
+		&:hover {
+			box-shadow: $hover-box-shadow;
 		}
 	}
 }

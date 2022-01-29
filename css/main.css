@@ -25,11 +25,10 @@
     margin: 1.5rem 1rem;
     transition: all 0.2s ease-in; }
     .hero__navbar-li:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+      transform: translateY(-2px); }
     .hero__navbar-li:active, .hero__navbar-li:focus {
-      transform: translateY(-1px);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      transform: translateY(0px);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
   .hero__navbar-a, .hero__navbar-a:link, .hero__navbar-a:visited {
     text-decoration: none;
     border-radius: 100px;
@@ -40,7 +39,10 @@
     letter-spacing: 1px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: Montserrat; }
+    font-family: Montserrat;
+    transition: all 0.2s ease-in; }
+  .hero__navbar-a:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
 
 .footer {
   margin-top: 2rem;
@@ -95,7 +97,7 @@ html {
   transition: all 0.2s ease-in; }
 
 .about {
-  background-image: url(../img/about-bg.jpg);
+  background: linear-gradient(to right bottom, #7c71dc, white);
   height: 100%;
   padding: 8.0rem 0; }
   @media (min-width: 250px) and (max-width: 600px) {
@@ -112,7 +114,7 @@ html {
     font-size: 8rem;
     font-family: playball;
     font-weight: 600;
-    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     -webkit-background-clip: text;
     color: transparent;
     transition: all 0.2s ease-in;
@@ -127,7 +129,7 @@ html {
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(to right, #7c71dc, #000);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     font-weight: 600;
     font-family: Montserrat;
@@ -173,10 +175,10 @@ html {
           margin-bottom: 1.0rem; } }
       .about__skills-li:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
       .about__skills-li:active, .about__skills-li:focus {
         transform: translateY(-1px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
 
 .image-gallery {
   background: linear-gradient(to right bottom, #7c71dc, #000);
@@ -186,7 +188,7 @@ html {
     font-size: 8rem;
     font-family: playball;
     font-weight: 600;
-    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     -webkit-background-clip: text;
     color: transparent;
     transition: all 0.2s ease-in;
